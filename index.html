@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EXUH</title>
+		
+		<!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+		<!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+		<!-- which is built on top of JQuery and offers additional possibilities -->
+		<!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		<!-- Your own script -->
+		<script src="scripts/service.js"></script>
+
+		<!-- Your own additional style sheet -->
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	
+	<body>
+		<div class="container-md p-3 my-3 border bg-dark text-white">
+			
+			
+			<div class="text-center row p-6">
+				<div class="col-sm-3"><img src="images/ldd.png"/></div>
+				<div class="col-sm-8 pl-5"><p><h1>Welcome to Exuhair</h1>
+					No party No life!</p>
+				</div>
+			</div>
+		
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			  <a class="navbar-brand" href="#">-----</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link" href="#first"><img src="images/ldd.png" alt="logo" style="width:30px;height:30px"><u>About Us</u></a>
+				  </li> 
+				  <li class="nav-item">
+					<a class="nav-link" href="#second"><img src="images/scissors.jpg" alt="logo" style="width:30px;height:30px"><u>Our Services</u></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#third"><img src="images/clock.png" alt="logo" style="width:30px;height:30px"><u>Make Appointment</u></a>
+				  </li>   
+			   </ul>
+			  </div>  
+			</nav>
+		</div>
+		
+		<div class="container-md p-3 my-3 border bg-light text-success">
+			<h3>Let us tell you about our services</h3>
+			<p>Need <mark>a hair cut</mark>?</p>
+			<p>Need <mark>a beard trim</mark>?</p>
+			<p>Need <mark><em>Others</em></mark>?</p>
+			<p class="text-uppercase"><b>Any Questions?</b></p>
+			<p><hr>
+				<div class="text-center row p-2">
+					<div class="col-sm-2 text-uppercase">call us:</div>
+					<div class="col-sm-5 pl-5"><p>
+						13843838438 ext: 1314 (HAIR)</p>
+					</div>
+				</div>
+				<div class="text-center row p-1">
+					<div class="col-sm-7 text-uppercase"><u>or</u></div>
+				</div>
+				<div class="text-center row p-2">
+					<div class="col-sm-2 text-uppercase">email us:</div>
+					<div class="col-sm-3 pl-5"><p>
+						<a href="mailto:exuhair@rhodes.com">exuhair@joat.com</a></p>
+					</div>
+				</div>
+			</hr></p>
+		</div>
+		
+		<div class="container" id="second">
+		
+			<h2>Exuhair Service description</h2>
+			<p>Here is a list of services offered (Click Service for hairdressers)</p>            
+			<table class="table table-primary table-hover">
+				<thead>
+				<tr>
+					<th>Service</th>
+					<th>Description</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td href="#hairdressers1" class="btn btn-primary btn-block" data-toggle="collapse">Haircut</td>
+					<td>
+						<ul>
+							<li>Hair trimming 15$
+								<ul><li>Washing add on +5$</li></ul>
+							</li>
+							<li>Beard trimming 10$</li>
+							<li>Dressing cut 20$</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td href="#hairdressers2" class="btn btn-primary btn-block" data-toggle="collapse">Drying</td>
+					<td>
+						<ul>
+							<li>Heat Drying 10$
+								<ul><li>Massage add on +20$</li></ul>
+							</li>
+							<li>Ironic drying 10$</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td href="#hairdressers3" class="btn btn-primary btn-block" data-toggle="collapse">Styling</td>
+					<td>
+						<ul>
+							<li>Hair Dyeing 20$</li>
+							<li>Beard Dyeing 15$</li>
+							<li>Hair Gelling 20$</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td href="#hairdressers4" class="btn btn-primary btn-block" data-toggle="collapse">Consultation</td>
+					<td>
+						<ul>
+							<li>Hair Health 15$/Session</li>
+							<li>Beard Health 15$/Session</li>
+							<li>Split Ends 15$/Session</li>
+						</ul>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			
+			<div class="row p-3">
+				<div class="col-sm-4 pl-8">
+					<div id="hairdressers1" class="collapse">
+						<div class="card bg-success" style="width:200px">
+							<img class="card-img-top" src="images/kushu.png" alt="Card image" style="width:100%">
+							<div class="card-body">
+								<h4 class="card-title">Uncle Ku</h4>
+								<p class="card-text">Stark Industry chief barber</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 pl-8">
+					<div id="hairdressers2" class="collapse">
+						<div class="card bg-success" style="width:200px">
+							<img class="card-img-top" src="images/elsa.png" alt="Card image" style="width:100%">
+							<div class="card-body">
+								<h4 class="card-title">Elsa</h4>
+								<p class="card-text">Arendelle royal beauty therapist</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 pl-8">
+					<div id="hairdressers3" class="collapse">
+						<div class="card bg-success" style="width:200px">
+							<img class="card-img-top" src="images/wcw.png" alt="Card image" style="width:100%">
+							<div class="card-body">
+								<h4 class="card-title">Eric Ren</h4>
+								<p class="card-text">Magnetic gifted hairstylist</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 pl-8">
+					<div id="hairdressers4" class="collapse">
+						<div class="card bg-success" style="width:200px">
+							<img class="card-img-top" src="images/doctor.png" alt="Card image" style="width:100%">
+							<div class="card-body">
+								<h4 class="card-title">Doctor D</h4>
+								<p class="card-text">Doctor from Rhodes Island, knows all hair.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		
+		<div class="container" id="third">
+			<div class="container-md p-3 my-3 border bg-warning text-white">
+				<div class="row p-2">
+					<div class="col-sm-8 pl-2">
+						<h1 style="color:white">Want to visit Exuhair?</h1>
+						<p style="color:green"><b><em>Pick and choose your appointment!</em></b></p>
+					</div>
+					<div class="col-sm-4 pl-8"><img src="images/clock.png" alt="logo" style="width:90px;height:90px"></div>
+				</div>
+			</div>
+			<div id="accordion">
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link" data-toggle="collapse" href="#collapseService">
+						Selection of services</a>
+					</div>
+					<div id="collapseService" class="collapse show" data-parent="#accordion">
+						<div class="card-body">
+							<p>Here is our list of services</p>
+							<p>Choose type(s) and hairdresser(s): [types/haidressers]</p>
+							<p>
+								<label>Cutting Hair:
+									<select name = "Cut" id = "Cut">
+										<option selected value = ""></option>
+										<option value = "Ht">Hair trimming 15$</option>
+										<option value = "Htw">Hair trimming and Washing add on 20$</option>
+										<option value = "Bt">Beard trimming 10$</option>
+										<option value = "Dc">Dressing cut 20$</option>
+									</select>
+									<select name = "Cuth" id = "Cuth">
+										<option selected value = ""></option>
+										<option value = "UncleKu">Uncle Ku</option>
+										<option value = "Elsa">Elsa</option>
+										<option value = "EricRen">Eric Ren</option>
+										<option value = "DoctorD">Doctor D</option>
+									</select>
+								</label>
+							</p>
+							<p>
+								<label>Drying Hair:
+									<select name = "Dry" id = "Dry">
+										<option value = "" selected></option>
+										<option value = "Hdr">Heat Drying 10$</option>
+										<option value = "Hdrm">Heat Drying and Massage add on 30$</option>
+										<option value = "Idr">Ironic drying 10$</option>
+									</select>
+									<select name = "Dryh" id = "Dryh">
+										<option selected value = ""></option>
+										<option value = "UncleKu">Uncle Ku</option>
+										<option value = "Elsa">Elsa</option>
+										<option value = "EricRen">Eric Ren</option>
+										<option value = "DoctorD">Doctor D</option>
+									</select>
+								</label>
+							</p>
+							<p>
+								<label>Styling Hair:
+									<select name = "Style" id = "Style">
+										<option value = "" selected></option>
+										<option value = "Hdy">Hair Dyeing 20$</option>
+										<option value = "Bdy">Beard Dyeing 15$</option>
+										<option value = "Hg">Hair Gelling 20$</option>
+									</select>
+									<select name = "Styleh" id = "Styleh">
+										<option selected value = ""></option>
+										<option value = "UncleKu">Uncle Ku</option>
+										<option value = "Elsa">Elsa</option>
+										<option value = "EricRen">Eric Ren</option>
+										<option value = "DoctorD">Doctor D</option>
+									</select>
+								</label>
+							</p>
+							<p>
+								<label>Hair Consultation:
+									<select name = "Consult" id = "Consult">
+										<option value = "" selected></option>
+										<option value = "Hh">Hair Health 15$/Session</option>
+										<option value = "Bh">Beard Health 15$/Session</option>
+										<option value = "Se">Split Ends 15$/Session</option>
+										<option value = "Tr">Trends consulting 100$/session</option>
+									</select>
+									<select name = "Consulth" id = "Consulth">
+										<option selected value = ""></option>
+										<option value = "UncleKu">Uncle Ku</option>
+										<option value = "Elsa">Elsa</option>
+										<option value = "EricRen">Eric Ren</option>
+										<option value = "DoctorD">Doctor D</option>
+									</select>
+								</label>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date and time</a>
+					</div>
+					<div id="collapseDate" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							<p>Appointment date and time?</p>
+							<!-- Bootstrap has various input components. Some examples are given here: -->
+							<!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+							<div class="form-group row">
+								<label for="dateInput" class="col-2 col-form-label">Date<img src="images/icons8-schedule-64.png" alt="logo" style="width:30px;height:30px"></label>
+								<div class="col-10">
+									<input class="form-control" type="date-local" value="yyyy-mm-dd" id="dateInput" required>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="timeInput" class="col-2 col-form-label">Time</label>
+								<div class="col-10">
+									<input class="form-control timepicker" type="time" min="09:00" max="18:00" id="timeInput" required>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your informations</a>
+					</div>
+					<div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							<p>please enter your information so we can contact you</p>
+							<p>Please enter your name, your email, and your phone number below</p>
+							
+							<p><label><strong>Name:</strong>
+								<input class="form-control" id = "name" name = "name" type = "text" autocomplete = "on" size = "25">
+							</label></p>
+							<p><label><strong>Email:</strong>
+								<input class="form-control" id = "email" name = "email" type = "email" autocomplete = "on" size = "25">
+							</label></p>
+							<p><label><strong>Phone Number:</strong>
+								<input class="form-control" id = "telephone" name = "telephone" type = "telephone" autocomplete = "on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+							</label><small>Format: "(xxx)-xxx-xxxx"</small></p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapsePaymentInfo">Payement</a>
+					</div>
+					<div id="collapsePaymentInfo" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							<p>please enter your payment information</p>
+							
+							<div class="container"><p><label><strong>Credit Card:</strong>
+								<input class="form-control" type="text" id="debit" title="We ask for your credit card number in case of no-show, 20$ will be charged.">
+								</label><small>Format: "xxxx xxxx xxxx xxxx"</small></p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<p>
+					<button id="addChoice" type = "button" value = "Submit" class="block" onclick="done(1)"><img src="images/icons8-approval-64.png" alt="logo" style="width:30px;height:30px"> Submit</button>
+					<button id="addChoice" type = "button" value = "Reset" class="block" onclick="done(0)"><img src="images/icons8-reset-64.png" alt="logo" style="width:30px;height:30px"> Reset</button>
+				</p>
+			</div>
+		</div>
+		
+
+		
+		<br>
+		
+		<footer>
+			<h2>
+				Website designed by Haochu Chen 300067058
+			</h2>
+		</footer>
+		
+	</body>
+</html>
